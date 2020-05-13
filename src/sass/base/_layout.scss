@@ -1,0 +1,33 @@
+.container {
+	max-width: 1440px;
+	margin: 6.4rem auto;
+	padding: 2.4rem;
+
+	@include respond(bp600) {
+		padding-top: 1rem;
+	}
+}
+
+.section {
+	padding: 3rem 5rem;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+
+	@include respond(bp900) {
+		flex-direction: column;
+	}
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}

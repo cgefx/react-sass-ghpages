@@ -1,0 +1,35 @@
+.header {
+	margin: 0 auto;
+	padding: 1rem 1.5rem;
+	text-align: center;
+	max-width: 64rem;
+
+	@include respond(bp600) {
+		margin-bottom: 2.4rem;
+	}
+
+	&__text {
+		font-weight: 200;
+		font-size: 4rem;
+
+		@include respond(bp600) {
+			font-size: 3rem;
+		}
+
+		&--bold {
+			font-weight: 600;
+		}
+
+		&--sub {
+			font-weight: 400;
+			margin-top: 1.6rem;
+			color: $color-gray-blue;
+			font-size: 1.8rem;
+
+			@include respond(bp600) {
+				font-size: 1.8rem;
+				max-width: 36rem;
+			}
+		}
+	}
+}
